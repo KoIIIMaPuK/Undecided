@@ -28,9 +28,9 @@ int main()
 
     // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
     //
-    //                                  Рабочая облатсь
+    //                                  Work space
     // 
-    // P.S. Не забыть добавить планеты в вектор planets
+    // P.S. Don't forget to add planets to the planets vector
     //
     Planet objectPlanet1(sf::Vector2f(X0 + 300, Y0), sf::Vector2f(0.f, 2.f), sf::Vector2f(0.f, 0.f), sf::Color::Blue, 0.5f); 
     Planet objectPlanet2(sf::Vector2f(X0 + 400, Y0), sf::Vector2f(0.3f, 1.5f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 0.6f);    
@@ -42,7 +42,7 @@ int main()
     // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 
 
-    // Вектор с планетами
+    // Vector with planets
     std::vector<Planet> planets = { 
         objectPlanet1, 
         objectPlanet2, 
