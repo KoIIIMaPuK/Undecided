@@ -37,5 +37,5 @@
 const int WIN_WIDTH = 1240;
 const int WIN_HEIGHT = 940;
 
-const float X0 = WIN_WIDTH / 2.0f; // Позиция Солнца
-const float Y0 = WIN_HEIGHT / 2.0f; // Позиция Солнца
+const float X0 = WIN_WIDTH / 2.0f; // Sun pos
+const float Y0 = WIN_HEIGHT / 2.0f; // Sun pos

@@ -15,25 +15,25 @@
 /*
 * Planet.
 *
-* @param position Позиция планеты.
-*                 Тип: sf::Vector2f
-*                 Пример: sf::Vector2f(X0 + 200, Y0)
+* @param position Position of the planet.
+*                 Type: sf::Vector2f
+*                 Example: sf::Vector2f(X0 + 200, Y0)
 *
-* @param velocity Скорость планеты.
-*                 Тип: sf::Vector2f
-*                 Пример: sf::Vector2f(0.f, 2.f) - движение вверх со скоростью 2.
+* @param velocity Speed ??of the planet.
+*                 Type: sf::Vector2f
+*                 Example: sf::Vector2f(0.f, 2.f) - move up with speed 2.
 *
-* @param acceleration Ускорение планеты.
-*                     Тип: sf::Vector2f
-*                     Пример: sf::Vector2f(0.f, 0.f) - отсутствие ускорения.
+* @param acceleration Acceleration of the planet.
+*                     Type: sf::Vector2f
+*                     Example: sf::Vector2f(0.f, 0.f) - no acceleration.
 *
-* @param color Цвет планеты.
-*              Тип: sf::Color
-*              Пример: sf::Color::Blue - синий цвет.
+* @param color Color of the planet.
+*              Type: sf::Color
+*              Example: sf::Color::Blue - blue color.
 *
-* @param radius Радиус планеты.
-*                Тип: float
-*                Пример: 1.5f - радиус планеты.
+* @param radius Radius of the planet.
+*               Type: float
+*               Example: 1.5f - radius of the planet.
 */
 class Planet {
 public:
