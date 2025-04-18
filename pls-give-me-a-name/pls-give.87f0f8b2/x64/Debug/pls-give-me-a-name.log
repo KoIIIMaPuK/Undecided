@@ -1,2 +1,6 @@
-﻿  __main.cpp
+﻿  Planet.cpp
+  Star.cpp
+  __main.cpp
+  include.cpp
+  Создание кода...
   pls-give-me-a-name.vcxproj -> Z:\SFML_GAME_FOLDER\Gravity-Simulation\pls-give-me-a-name\x64\Debug\pls-give-me-a-name.exe

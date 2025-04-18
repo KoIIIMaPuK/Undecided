@@ -34,7 +34,7 @@
 //		[ Const ] -> :D
 //
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-const int WIN_WIDTH = 1280;
+const int WIN_WIDTH = 1240;
 const int WIN_HEIGHT = 940;
 
 const float X0 = WIN_WIDTH / 2.0f; // Позиция Солнца
