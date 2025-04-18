@@ -130,11 +130,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AstronomicalObject.cpp" />
+    <ClCompile Include="include.cpp" />
+    <ClCompile Include="Planet.cpp" />
+    <ClCompile Include="Star.cpp" />
     <ClCompile Include="__main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AstronomicalObject.h" />
+    <ClInclude Include="include.h" />
+    <ClInclude Include="Planet.h" />
+    <ClInclude Include="Star.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
