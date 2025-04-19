@@ -8,7 +8,7 @@
 //-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 #include "Planet.h"
 #include "Star.h"
-
+#include "AstronomicalObject.h"
 
 
 
@@ -25,31 +25,26 @@ int main()
 
 
 
-
     // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
     //
     //                                  Work space
     // 
     // P.S. Don't forget to add planets to the planets vector
     //
-    Planet objectPlanet1(sf::Vector2f(X0 + 300, Y0), sf::Vector2f(0.f, 2.f), sf::Vector2f(0.f, 0.f), sf::Color::Blue, 0.5f); 
-    Planet objectPlanet2(sf::Vector2f(X0 + 400, Y0), sf::Vector2f(0.3f, 1.5f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 0.6f);    
-    Planet objectPlanet3(sf::Vector2f(X0 + 550, Y0), sf::Vector2f(0.3f, 1.5f), sf::Vector2f(0.f, 0.f), sf::Color::Green, 0.7f); 
-    Planet objectPlanet4(sf::Vector2f(X0 - 300, Y0), sf::Vector2f(0.3f, 1.5f), sf::Vector2f(0.f, 0.f), sf::Color::Magenta, 0.5f); 
-    Planet objectPlanet5(sf::Vector2f(X0 - 500, Y0), sf::Vector2f(0.3f, 1.5f), sf::Vector2f(0.f, 0.f), sf::Color::White, 1.5f);   
-    Star objectSun(sf::Vector2f(X0, Y0), 5000.f, sf::Color::Yellow, 10.f);
+    AstronomicalObject objectPlanet1(sf::Vector2f(X0, Y0), sf::Vector2f(0.f, 0.f), sf::Vector2f(0.f, 0.f), sf::Color::Blue, 5.f, 8000.f, true);
+    AstronomicalObject objectPlanet2(sf::Vector2f(X0 + 300, Y0), sf::Vector2f(0.3f, 4.f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 2.f, 100.f, false);
+    AstronomicalObject objectPlanet3(sf::Vector2f(X0 + 550, Y0), sf::Vector2f(-2.f, 3.f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 2.f, 100.f, false);
+
+    std::vector<AstronomicalObject> planets = {
+       objectPlanet1,
+       objectPlanet2,
+       objectPlanet3
+    };
     //
     // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 
 
-    // Vector with planets
-    std::vector<Planet> planets = { 
-        objectPlanet1, 
-        objectPlanet2, 
-        objectPlanet3, 
-        objectPlanet4, 
-        objectPlanet5 
-    };
+
 
 
     // *************************************************************************
@@ -66,18 +61,16 @@ int main()
         }
 
         // Обновка полей 
-        objectSun.update();
 
         for(auto& planet : planets)
         {
-            planet.update(objectSun);
+            planet.update(planets);
         }
 
 
         // Отрисовка
         window.clear();
 
-        objectSun.draw(window);
         for(auto & planet : planets)
         {
             planet.draw(window);
