@@ -32,8 +32,8 @@ int main()
     // P.S. Don't forget to add planets to the planets vector
     //
     AstronomicalObject objectPlanet1(sf::Vector2f(X0, Y0), sf::Vector2f(0.f, 0.f), sf::Vector2f(0.f, 0.f), sf::Color::Blue, 5.f, 8000.f, true);
-    AstronomicalObject objectPlanet2(sf::Vector2f(X0 + 300, Y0), sf::Vector2f(0.3f, 4.f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 2.f, 100.f, false);
-    AstronomicalObject objectPlanet3(sf::Vector2f(X0 + 550, Y0), sf::Vector2f(-2.f, 3.f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 2.f, 100.f, false);
+    AstronomicalObject objectPlanet2(sf::Vector2f(X0 + 300, Y0), sf::Vector2f(-0.3f, 4.f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 2.f, 100.f, false);
+    AstronomicalObject objectPlanet3(sf::Vector2f(X0 - 300, Y0), sf::Vector2f(1.2f, 3.f), sf::Vector2f(0.f, 0.f), sf::Color::Red, 2.f, 100.f, false);
 
     std::vector<AstronomicalObject> planets = {
        objectPlanet1,

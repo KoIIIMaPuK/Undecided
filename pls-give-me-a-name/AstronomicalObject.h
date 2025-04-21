@@ -30,7 +30,8 @@ private:
     sf::Color color;
     float radius;
     float mass;
-    bool isStar;
+
+    bool isStar; // for fun
 
 };
 
